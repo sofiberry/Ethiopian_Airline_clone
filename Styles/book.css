@@ -1,0 +1,427 @@
+
+.header-book-section {
+   position: relative;
+   padding-bottom: 490px;
+   background-image: url('flights-Digital.jpg');
+   background-repeat: no-repeat;
+   background-position-x: center;
+   background-origin: border-box;
+}
+
+.header-booking-text {
+   font-family: 'Roboto', sans-serif;
+   letter-spacing: 3px;
+   line-height: 4rem;
+   position: absolute;
+   top: 13rem;
+   left: 5rem;
+   right: 0;
+}
+.hero-heading {
+   font-weight: 600;
+   font-size: 2.5rem;
+   text-align: left;
+   text-shadow: 2px 2px 3px #000;
+   color: rgb(255, 255, 255);
+   z-index: 9;
+}
+
+.hero-text {
+   font-size: 1.5rem;
+   font-weight: 600;
+   opacity: 0.9;
+}
+
+.booking-form-layout {
+   position: relative;
+   top: -10rem;
+   left: 0;
+   right: 0;
+}
+
+.header-containers {
+   background-color: #fff;
+   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+/*==================================
+
+      TOGGLING THE WIDGET-CONTAINERS
+               (ACCORDION)
+
+   ===================================*/
+
+
+
+.section-fluid {
+   position: relative;
+   width: 90%;
+   display: block;
+   margin: 1.5rem 3.6rem -4rem;
+   padding-top: 1rem;
+}
+
+.section-fluid label {
+   margin-left: 40px;
+
+}
+
+.round-trip {
+   margin-left: -40px;
+}
+
+.widget-btn-text {
+   font-size: 1.5rem;
+   z-index: 99;
+}
+
+.widget-btn-text:hover {
+   padding: 10px 20px; 
+   background-color: rgb(194, 194, 194);
+}
+
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+   position: absolute;
+   visibility: hidden;
+}
+
+.color-btn:checked+label,
+.color-btn:not(:checked)+label {
+   position: relative;
+   height: 40px;
+   transition: all 250ms linear;
+   border-radius: 4px;
+   width: 40px;
+   overflow: hidden;
+   border: none;
+   cursor: pointer;
+   color: #ffeba7;
+   margin-right: 10px;
+   box-shadow: 0 12px 35px 0 rgba(16, 39, 112, .25);
+   z-index: 10;
+   border: 3px solid transparent;
+}
+
+.color-btn:checked+label {
+   border-color: #434343;
+   transform: scale(1.1);
+}
+
+
+.desc-btn:checked+label,
+.desc-btn:not(:checked)+label {
+   position: relative;
+   transition: all 300ms linear;
+   display: inline-block;
+   border: none;
+   cursor: pointer;
+   color: #ffeba7;
+   font-family: 'Poppins', sans-serif;
+   font-weight: 600;
+   font-size: 18px;
+   line-height: 1.2;
+   color: rgb(74, 68, 68);
+   opacity: 0.5;
+}
+
+.desc-btn:checked+label {
+   opacity: 1;
+}
+
+.desc-btn:not(:checked)+label:hover {
+   opacity: 0.8;
+}
+
+.desc-sec {
+   padding-top: 20px;
+   padding-bottom: 30px;
+   transition: all 50ms linear;
+   opacity: 0;
+   overflow: hidden;
+   pointer-events: none;
+   transform: translateY(20px);
+}
+
+.desc-sec.accor-1 {
+   width: 95%;
+}
+/* .desc-sec.accor-1, */
+.desc-sec.accor-2 {
+   position: absolute;
+   top: 22px;
+   left: 0;
+   width: 95%;
+   z-index: 2;
+}
+
+#desc-1:checked~.desc-sec.accor-1 {
+   opacity: 1;
+   pointer-events: auto;
+   transform: translateY(0);
+   z-index: 999;
+}
+
+#desc-2:checked~.desc-sec.accor-2 {
+   opacity: 1;
+   pointer-events: auto;
+   transform: translateY(0);
+   z-index: 999;
+}
+
+/* booking form */
+
+.booking-form-container {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   /* border: 1px solid #000; */
+   background-color: #fff;
+   padding: 0;
+   right: 0;
+   margin: 1rem;
+}
+
+.booking-form,
+.booking-form2,
+.booking-form3,
+#date-selection,
+#roundtrip-date-selection {
+   width: 94%;
+   margin: auto 4rem;
+}
+.booking-form {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+}
+#roundtrip-date-selection {
+   display: flex;
+   justify-content: space-between;
+   margin-top: 30px;
+}
+#date-selection {
+   padding-right: 30rem;
+   margin-top: 30px; 
+}
+
+
+
+.booking-form2 {
+   position: relative;
+}
+.booking-form3 {
+   margin: 30px;
+   margin-left: 60px;
+}
+
+.booking-form3 label {
+   font-size: 1.4rem;
+   color: #000;
+}
+input[type="checkbox"] {
+   width: 20px;
+   height: 20px;
+}
+.input-area {
+   flex:1;
+}
+.widget-input {
+   box-sizing: border-box;
+   border: none;
+   width: 94%;
+   height: 120%;
+   font-size: 1.4rem;
+   overflow: hidden;
+   border-radius: 3px;
+   margin-top: 0.5rem;
+   padding-top: 0px;
+   padding-left: 10px;
+   padding-bottom: 20px;
+   outline: none;
+   opacity: 0.8;
+}
+
+.booking-fieldset {
+   box-sizing: border-box;
+   border: 1px solid #c9c9c9;
+   height: 70px;
+   flex: 1;
+   overflow: hidden;
+   border-radius: 3px;
+   margin-top: 1.5rem;
+   margin-left: 10px;
+}
+
+.widget-inner-header-text {
+   display: block;
+   font-size: 15px;
+   color: #333232;
+   margin-right: 1rem;
+   margin-left: 1rem;
+}
+
+.widget-input::placeholder {
+   width: 100%;
+   margin-top: 0;
+   margin-bottom: 0.5rem;
+   font-weight: 500;
+   line-height: 1.4;
+   margin-left: 1rem;
+   margin-right: 1rem;
+   font-size: 1.6rem;
+}
+
+#departure-date,
+#roundtrip-departure-date,
+#roundtrip-return-date {
+   border: 1px solid #b0b1b1;
+   display: block;
+   flex: 1;
+   padding-top: 9px;
+   font-size: 1.6rem;
+   margin-left: 10px;
+   color: #c9c9c9;
+}
+
+#roundtrip-departure-date,
+#roundtrip-return-date {
+   padding: 0;
+   padding-left: 10px;
+   font-size: 1.2rem;
+}
+
+label {
+   color: #a9a9a9;
+   font-size: 18px;
+   margin-left: 10px;
+}
+
+.traveler-area {
+   margin-top: 50px;
+}
+.traveler-area p {
+   margin-left: 12px; 
+   margin-bottom: -16px;
+
+}
+.travelers {
+   width: 30%;
+}
+
+/* styling file-chooser input */
+
+.file-choosing-container {
+   position: absolute;
+   top: 8px;
+   left: 36rem;
+   right: 0;
+
+}
+
+#traveler-file p {
+   margin-bottom: 10px;
+}
+
+.file-content {
+   position: relative;
+   padding: 11px 16px;
+   font-size: 15px;
+   line-height: 1.4;
+   letter-spacing: 0.3rem;
+   border-radius: 3px;
+   color: #fff;
+   background-color: #ffc100;
+   border: 0;
+   overflow: hidden;
+}
+.file-content input[type="file"] {
+   cursor: pointer;
+   position: absolute;
+   top: 0;
+   right: 0;
+   transform: scale(3);
+   opacity: 0;
+} 
+
+.flight-footer-btn {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   justify-content: space-between;
+   align-items: center;
+   margin: 3rem;
+   padding: 0;
+}
+
+.btn-submit {
+   margin-right: 21rem;
+}
+
+.btn-search {
+   margin-left:15rem;
+}
+
+#booking-submit-btn {
+   padding: 6px 20px;
+   border-image: 2px solid linear-gradient(to top right, #103CE8, #64E9FF);
+   border-image-slice: 1;
+   background-image: linear-gradient(to top right, #103CE7, #64E9FF);
+}
+#flight-search-btn {
+   padding: 6px 20px;
+   background-image: linear-gradient(to top right, #103CE7, #64E9FF);
+}
+.form-btn a,
+.form-btn input[type="submit"] {
+   text-decoration: none;
+   color: white;
+   font-size: 1.6rem;
+}
+
+.booking-form3 {
+   display: grid;
+   grid-template-columns: 60px 1fr;
+}
+
+input[type="checkbox"] {
+   position: absolute;
+   transform: scale(0);
+}
+
+.checkbox {
+   position: relative;
+   width: 30px;
+   height: 30px;
+   border: 1.4px solid #36383e;
+   border-radius: 6px;
+   cursor: pointer;
+   transition: background 0.1s ease;
+}
+
+.checkbox::after {
+   content: "";
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   width: 10px;
+   height: 20px;
+   margin-left: -5px;
+   margin-top: -13px;
+   opacity: 0;
+   transform: rotate(45deg) scale(0);
+   border-right: 3px solid #1d1e22;
+   border-bottom: 3px solid #1d1e22;
+   transition: all 0.3s ease;
+   transition-delay: 0.15s;
+}
+
+.booking-form3 input:checked~.checkbox {
+   border-color: transparent;
+   background: #1ac0a2;
+}
+
+.booking-form3 input:checked~.checkbox:after {
+   opacity: 1;
+   transform: rotate(45deg) scale(1);
+}

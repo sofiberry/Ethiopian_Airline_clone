@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
+
+* {
+   padding: 0;
+   margin: 0;
+}
+
+.hero-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100px;
+}
+
+.hero-text {
+   font-family: 'Poppins', sans-serif;
+   font-weight: 600;
+   font-size: 2.5rem;
+}
+
+.s4y-teams-detail {
+   display: flex;
+   justify-content: space-between;
+}
+
+.profilePicture {
+   --s: 200px;
+   --b: 8px;
+   --g: 12px;
+   --cw: #ffff;
+   --cg: #379637;
+   --cb: #822fff;
+
+
+   width: var(--s);
+   aspect-ratio: 1;
+   outline: calc(var(--s)/-2);
+   cursor: pointer;
+   border-radius: 100%;
+   transition: 0.3s;
+
+}
+
+.img-first:has(.green) .profilePicture:hover {
+   outline: var(--b) solid var(--cg);
+   outline-offset: var(--g);
+}
+
+.img-first:has(.white) .profilePicture:hover {
+   outline: var(--b) solid var(--cw);
+   outline-offset: var(--g);
+}
+.img-first.img-first:has(.blue) .profilePicture:hover {
+   outline: var(--b) solid var(--cb);
+      outline-offset: var(--g);
+}
+.img-first {
+   margin: 0;
+   /* margin-left: 10rem; */
+   min-height: 8vh;
+   display: grid;
+   grid-auto-flow: row;
+   gap: 20px;
+   /* place-content: center; */
+   /* place-items: center; */
+   object-fit: cover;
+}
+
+.img-first:has(h1,h2) {
+   text-align: center;
+
+}
+
+svg {
+   position: absolute;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   height: 514vh;
+   box-sizing: border-box;
+   display: block;
+   z-index: -1;
+   background-color: #0e4166;
+   background-image: linear-gradient(to bottom, rgba(14, 65, 102, 0.86), #0e4166);
+}
+.about-us-footer {
+   background: transparent !important;
+   border-top: solid 1px #bfc1c4;
+}
+
+.our-description {
+   margin-left: 2rem;
+   margin-right: 3rem;
+   box-sizing: border-box;
+   color: #b2bab2;
+
+}
+
+.par-with-checkbox {
+   display: grid;
+   grid-template-columns: 1.2rem 1fr;
+   gap: 2.5rem;
+}
+.h3 {
+   font-weight: 600;
+   font-size: xx-large;
+   color: #050505;
+   transition: all .5s ease-in-out;
+}
+.h3:hover {
+   color: #4f90be;
+}
+
+.img-about-us {
+   width: 100%;
+   height: 50vh;
+   object-fit: contain;
+}

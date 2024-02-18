@@ -1,0 +1,147 @@
+
+.home-banner {
+   height: 480px;
+   background-image: url(help-background.png);
+   background-repeat: no-repeat !important;
+   width: 100%;
+   background-size: cover !important;
+   background-position: center !important;
+}
+
+.home-banner-caption {
+   position: relative;
+   top: 200px;
+   color: #fff;
+   background: #dddddd57;
+   padding: 16px;
+   width: 70%;
+}
+
+.container {
+   margin-right: auto;
+   margin-left: auto;
+   font-family: "Segoe UI",
+      Roboto,
+      "Helvetica Neue",
+      Arial,
+      "Noto Sans",
+      "Liberation Sans",
+      sans-serif,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      "Noto Color Emoji";
+}
+
+.home-banner-caption h1 {
+   color: #ffc107;
+   font-weight: 700;
+   text-shadow: 2px 2px 3px #000;
+   font-size: 2rem;
+}
+
+.home-banner-caption .sub-title {
+   width: 75%;
+   text-shadow: 2px 2px 3px #000;
+   color: #fff;
+   font-weight: 600;
+   font-size: 1.3rem;
+}
+
+.faq-container {
+   display: flex;
+}
+.body-container {
+   width: 100%;
+   padding-right: 1.2rem;
+   padding-left: 1.2rem;
+   margin-right: auto;
+   margin-left: auto;
+}
+
+summary {
+   padding: .6em;
+   background: #84ab90;
+   margin-bottom: 1em;
+   cursor: pointer;
+   outline: none;
+   border-radius: .3em;
+   font-weight: bold;
+   font-size: 1rem;
+   transition: background-color .3s;
+}
+
+summary:hover {
+   background: #608a60;
+}
+
+.content ul,
+.content {
+   margin-left: 1rem;
+}
+.page-header p {
+   margin: 4px;
+}
+
+.active-country-phone-pagination {
+   margin-top: 2rem;
+}
+.country-phone-list {
+   background-color: #e3fff0;
+   border-radius: 10px;
+   width: 30%;
+   margin: auto;
+   margin-bottom: 2rem;
+   
+}
+.page-header {
+   text-align: center;
+   font-size: 1.5em;
+   font-weight: normal;
+   border-bottom: 1px solid #ddd;
+   margin: 10px 0;
+}
+
+.text-center {
+   text-align: center;
+   margin: 0;
+}
+.text-center h2,
+.page-header h3 {
+   font-family: 'montserrat', sans-serif;
+   margin: 0;
+}
+
+#pagination {
+   margin: 0;
+   padding: 0;
+   text-align: center;
+   padding-bottom: 1rem;
+}
+
+#pagination li {
+   display: inline;
+}
+
+#pagination li a {
+   display: inline-block;
+   text-decoration: none;
+   padding: 6px 10px;
+   color: #000;
+   border-radius: 5px;
+   -webkit-transition: background-color 0.3s;
+   transition: background-color 0.3s;
+}
+
+#pagination li a.active {
+   background-color: #4caf50;
+   color: #fff
+}
+
+#pagination li a:hover:not(.active) {
+   background-color: #c3f5d6;
+}
+
+.help-footer {
+   background: #aedcbc !important;
+}
